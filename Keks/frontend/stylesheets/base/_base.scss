@@ -1,0 +1,13 @@
+body {
+	font: #{$font-size}/#{$line-height} $font-sans;
+	color: $font-color;
+	min-width: 320px;
+	background: $bg-color;
+}
+.clearfix {
+	@include clearfix;
+}
+.container {
+	@include container (1576px, 0 10px);
+	margin: 0 auto;
+}

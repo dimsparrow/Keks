@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>{% block title %}{% endblock %}</title>
+	{% block styles %}
+	    <link rel="stylesheet" href="./css/all.css">
+	{% endblock %}
+	<script  src="./js/require.js" data-main="{% block jsEntryPoint %}./js/index{% endblock %}"></script>
+</head>
+<body>
+	<div class="wrapper">
+		{% include './blocks/_header.twig' %}
+		<div class="main">
+			{% block content %}
+			{% endblock %}
+		</div>
+		{% include './blocks/_footer.twig' %}
+	</div>
+</body>
+</html>
