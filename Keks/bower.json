@@ -16,6 +16,7 @@
   "dependencies": {
     "jquery": "^3.1.0",
     "requirejs": "^2.2.0",
-    "domReady": "^2.0.1"
+    "domReady": "^2.0.1",
+    "font-awesome": "^4.6.3"
   }
 }

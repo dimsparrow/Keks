@@ -51,6 +51,9 @@ textarea,
 select {
     box-sizing: border-box;
 	vertical-align: middle;
+	&:focus {
+		outline: none;
+	}
 }
 textarea{
 	overflow: auto;

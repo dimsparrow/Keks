@@ -11,3 +11,16 @@ body {
 	@include container (1576px, 0 10px);
 	margin: 0 auto;
 }
+.logo {
+	font-size: 0;
+	line-height: 0;
+	background: url('../img/logo.png') no-repeat;
+	width: 189px;
+	height: 84px;
+	display: block;
+	a {
+		display: block;
+		height: 100%;
+	}
+}
+

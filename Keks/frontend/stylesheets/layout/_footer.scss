@@ -1,0 +1,38 @@
+.footer {
+	&__top {
+		padding: 60px 0;
+		border-bottom: 1px solid #e8e8e8;
+		.menu-plus {
+			display: flex;
+			justify-content: space-between;
+			padding: 0 30px;
+			li {
+				display: flex;
+				align-items: center;
+				margin: 0 27px;
+			}
+			[class^="icon-"], [class*=" icon-"] {
+				font-size: 40px;
+				margin: 0 12px 0 0;
+				color: #ffcb05;
+			}
+		}
+	}
+	&__bottom {
+		padding: 48px 0;
+		display: flex;
+		justify-content: space-between;
+		.logo-scalar {
+			font-size: 0;
+			line-height: 0;
+			background: url('../img/logo-scalar.png') no-repeat;
+			width: 85px;
+			height: 95px;
+			display: block;
+			a {
+				display: block;
+				height: 100%;
+			}
+		}
+	}
+}
