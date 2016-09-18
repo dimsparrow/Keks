@@ -91,7 +91,7 @@
 		}
 		input[type="button"] {
 			position: relative;
-			left: -5px;
+			left: -6px;
 			padding: 13px 24px;
 			border: 0;
 			border-radius: 0 5px 5px 0;
@@ -144,6 +144,10 @@
 			}
 		}
 		.wish {
+			.title {
+				color: #787878;
+				font-size: 12px;
+			}
 			display: flex;
 			padding: 0 55px;
 			position: relative;

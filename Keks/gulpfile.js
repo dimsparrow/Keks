@@ -36,7 +36,7 @@ gulp.task('main-bower-files',  function() {
 });
 
 gulp.task('public::images', function(){
-	return gulp.src(['./frontend/images/*.jpg', './frontend/images/*.png'])
+	return gulp.src(['./frontend/images/*.jpg', './frontend/images/*.png', './frontend/images/*.svg'])
 	.pipe(gulp.dest('./public/img'))
 	.pipe(logger())
 	.pipe(browserSync.stream());

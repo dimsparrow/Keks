@@ -8,7 +8,7 @@ body {
 	@include clearfix;
 }
 .container {
-	@include container (1576px, 0 10px);
+	@include container (1576px, 0 15px);
 	margin: 0 auto;
 }
 .logo {
@@ -23,4 +23,19 @@ body {
 		height: 100%;
 	}
 }
-
+.main {
+	background: #f5f5f5;
+}
+.title-footer {
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 14px;
+	color: #616161;
+	margin: 0 0 20px;
+}
+.title-block {
+	font-size: 22px;
+	display: inline-block;
+	margin: 0 0 35px;
+	color: #333;
+}
