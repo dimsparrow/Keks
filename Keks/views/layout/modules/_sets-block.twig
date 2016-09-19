@@ -1,0 +1,16 @@
+<div class="sets-block">
+	<div class="container">
+		<div class="holder-title">
+			<h2 class="title-block">Комплект</h2>
+		</div>
+		<div class="holder-products">
+		{% block content %}
+			{% include '../utilities/_new-product.twig' %}
+			{% include '../utilities/_keks-product.twig' %}
+			{% include '../utilities/_top-product.twig' %}
+			{% include '../utilities/_sale-product.twig' %}
+			{% include '../utilities/_total.twig' %}
+		{% endblock %}
+		</div>
+	</div>
+</div>

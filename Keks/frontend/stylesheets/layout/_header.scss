@@ -121,6 +121,8 @@
 			border-color: #e8e8e8;
 			position: relative;
 			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
 		}
 		.call-back {
 			padding: 0 12px;
@@ -138,7 +140,7 @@
 					color: #e88800;
 					cursor: pointer;
 					&:before {
-						border-color: #e88800;
+						content: none;
 					}
 				}
 			}
