@@ -3516,6 +3516,114 @@ input[type="search"]::-ms-clear {
     border-right: 15px solid #bc1515;
     border-bottom: 0 solid transparent; }
 
+.delivery {
+  display: inline-block;
+  padding: 5px; }
+  .delivery .bonus {
+    margin: 0 0 27px; }
+    .delivery .bonus li {
+      display: flex;
+      align-items: center;
+      margin: 0 0 10px; }
+  .delivery .icon {
+    display: inline-block;
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    background: #f5f5f5;
+    position: relative;
+    color: #5e5e5e;
+    font-size: 18px;
+    margin: 0 15px 0 0; }
+    .delivery .icon:before {
+      position: absolute;
+      top: 7px;
+      left: 5px; }
+  .delivery .title {
+    color: #878787;
+    font-size: 12px; }
+  .delivery .holder-form {
+    display: flex;
+    align-items: center;
+    margin: 0 0 10px; }
+    .delivery .holder-form .title-delivery {
+      color: #696969;
+      font-weight: 700;
+      padding: 0 25px 0 0;
+      position: relative;
+      margin: 0 42px 0 0; }
+      .delivery .holder-form .title-delivery:before {
+        content: '\f05a';
+        font: 15px/18px 'FontAwesome';
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #ffcb05; }
+    .delivery .holder-form .holder-select {
+      position: relative; }
+      .delivery .holder-form .holder-select:before {
+        content: '\f0d7';
+        font: 14px/16px 'FontAwesome';
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        pointer-events: none;
+        z-index: 1; }
+    .delivery .holder-form select {
+      padding: 10px 30px 10px 15px;
+      border-radius: 5px;
+      border-color: #e8e8e8;
+      position: relative;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      width: 125px;
+      font-size: 14px;
+      color: #696969; }
+  .delivery .holder {
+    padding: 0 20px;
+    position: relative; }
+    .delivery .holder:before {
+      content: '';
+      position: absolute;
+      width: 1px;
+      height: 95%;
+      top: 8px;
+      left: 0;
+      background: #ededed; }
+    .delivery .holder .holder-carrier {
+      margin: 0 0 15px;
+      color: #8a8a8a;
+      line-height: 1.6; }
+      .delivery .holder .holder-carrier ul {
+        padding: 0 10px; }
+        .delivery .holder .holder-carrier ul li {
+          display: flex;
+          justify-content: space-between; }
+      .delivery .holder .holder-carrier a {
+        color: #8a8a8a;
+        position: relative; }
+        .delivery .holder .holder-carrier a:after {
+          content: '';
+          width: 100%;
+          border: 1px dashed #8a8a8a;
+          position: absolute;
+          left: 0;
+          bottom: 0; }
+        .delivery .holder .holder-carrier a:hover {
+          color: #e88800; }
+          .delivery .holder .holder-carrier a:hover:after {
+            content: none; }
+      .delivery .holder .holder-carrier .price {
+        color: #5e5e5e;
+        padding: 0 0 0 10px; }
+    .delivery .holder .title-carrier {
+      color: #e88800;
+      font-weight: 700;
+      margin: 0 0 12px; }
+
 .header__top {
   border-bottom: 1px solid #eee; }
   .header__top .container {
@@ -3820,6 +3928,9 @@ input[type="search"]::-ms-clear {
       .slider-block .products-menu .border:hover a:before {
         content: none; }
 
+.about-product-block .holder-about {
+  background: #fff; }
+
 .sets-block, .viewed-block {
   padding: 55px 0; }
   .sets-block .holder-products, .viewed-block .holder-products {
@@ -4012,9 +4123,15 @@ input[type="search"]::-ms-clear {
 .viewed-block .product {
   margin-right: 0; }
 
-.viewed-block .slick-slider li {
-  display: inline-block;
-  vertical-align: top; }
+.viewed-block .slick-slider {
+  font-size: 0; }
+  .viewed-block .slick-slider li {
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 7px 0 0; }
+    .viewed-block .slick-slider li:last-child {
+      margin-right: 0; }
 
 .viewed-block .plus {
   display: none; }

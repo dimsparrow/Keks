@@ -162,6 +162,11 @@
 		}
 	}
 }
+.about-product-block {
+	.holder-about {
+		background: #fff;
+	}
+}
 .sets-block, .viewed-block {
 	padding: 55px 0;
 	.holder-products {
@@ -410,9 +415,15 @@
 		margin-right: 0;
 	}
 	.slick-slider {
+		font-size: 0;
 		li {
+			font-size: 14px;
 			display: inline-block;
 			vertical-align: top;
+			margin: 0 7px 0 0;
+			&:last-child {
+				margin-right: 0;
+			}
 		}
 	}
 	.plus {
