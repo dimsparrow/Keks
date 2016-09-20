@@ -338,6 +338,12 @@
 		margin: 0 0 16px;
 		font-size: 11px;
 	}
+	.count-reviews {
+		&:hover {
+			cursor: pointer;
+			color: #333;
+		}
+	}
 	.price {
 		color: #e88800;
 		font-size: 15px;

@@ -62,7 +62,7 @@
 		opacity: .8;
 	}
 }
-.btn-bay {
+.btn-buy {
 	padding: 14px 25px 14px 46px;
 	background: #5bbc2e;
 	color: #fff;
@@ -190,5 +190,25 @@
 		border-top: 9px solid transparent;
 		border-right: 15px solid #bc1515;
 		border-bottom: 0 solid transparent;
+	}
+}
+.btn-credit {
+	padding: 13px 20px 13px 44px;
+	background: #ffcb05;
+	border-radius: 5px;
+	color: #696558;
+	text-transform: uppercase;
+	font-weight: 700;
+	position: relative;
+	&:before {
+		content: '\f200';
+		font: 14px/18px 'FontAwesome';
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: 20px;
+	}
+	&:hover {
+		opacity: .8;
 	}
 }
