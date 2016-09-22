@@ -225,14 +225,16 @@
 		content: '\f004';
 		font: 11px/14px 'FontAwesome';
 		position: absolute;
-		top: 5px;
+		top: 50%;
+		transform: translateY(-50%);
 		right: 7px;
 	}
 	&:after {
 		content: '\f189';
 		font: 11px/14px 'FontAwesome';
 		position: absolute;
-		top: 5px;
+		top: 50%;
+		transform: translateY(-50%);
 		left: 7px;
 		color: #fff;
 	}
@@ -249,11 +251,13 @@
 	margin: 0 8px 0 0;
 	display: inline-block;
 	vertical-align: middle;
+	font-size: 12px;
 	&:before {
 		content: '\f082';
-		font: 16px/16px 'FontAwesome';
+		font: 15px/18px 'FontAwesome';
 		position: absolute;
-		top: 3px;
+		top: 50%;
+		transform: translateY(-50%);
 		left: 7px;
 	}
 	&:hover {
@@ -268,11 +272,13 @@
 	color: #fff;
 	border-radius: 5px;
 	position: relative;
+	font-size: 12px;
 	&:before {
 		content: '\f099';
-		font: 16px/16px 'FontAwesome';
+		font: 15px/18px 'FontAwesome';
 		position: absolute;
-		top: 4px;
+		top: 50%;
+		transform: translateY(-50%);
 		left: 7px;
 	}
 	&:hover {

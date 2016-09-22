@@ -165,6 +165,11 @@
 .about-product-block {
 	.holder-about {
 		background: #fff;
+		display: flex;
+		justify-content: space-between;
+		padding: 40px 32px 60px;
+		border-radius: 5px;
+		border: 1px solid #ededed;
 	}
 }
 .sets-block, .viewed-block {
@@ -259,7 +264,7 @@
 		border: 1px solid #ffcb05;
 		background: #fff;
 		border-radius: 5px;
-		padding: 60px 85px;
+		padding: 60px 70px;
 		text-align: center;
 		.total-nosale {
 			font-size: 15px;
@@ -291,7 +296,7 @@
 			content: '';
 			position: absolute;
 			top: -55px;
-			left: -15px;
+			left: -8px;
 			width: 146px;
 			height: 146px;
 			border: 3px solid #fec10e;
@@ -417,6 +422,9 @@
 	}
 }
 .viewed-block  {
+	.holder-viewed {
+		text-align: center;
+	}
 	.product {
 		margin-right: 0;
 	}

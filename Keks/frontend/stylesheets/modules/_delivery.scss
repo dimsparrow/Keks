@@ -1,7 +1,5 @@
 .delivery {
-	display: inline-block;
-	vertical-align: top;
-	padding: 5px;
+	padding: 0 20px;
 	.bonus {
 		margin: 0 0 27px;
 		li {
@@ -97,6 +95,7 @@
 				li {
 					display: flex;
 					justify-content: space-between;
+					align-items: flex-end;
 				}
 			}
 			a {

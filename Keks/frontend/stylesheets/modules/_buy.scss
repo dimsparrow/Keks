@@ -1,6 +1,4 @@
 .buy-container {
-	display: inline-block;
-	vertical-align: top;
 }
 .holder-buy-block {
 	margin: 0 0 23px;
@@ -76,6 +74,9 @@
 	.holder-tools {
 		padding: 27px 27px 5px;
 		display: flex;
+		.holder-buy {
+			flex-shrink: 0;
+		}
 		.holder-price {
 			margin: 0 24px 0 0;
 		}
@@ -211,6 +212,7 @@
 		color: #787878;
 		background: #fff;
 		margin: 0 20px 0 0;
+		font-size: 12px;
 		&:before {
 			content: '';
 			position: absolute;
