@@ -6,10 +6,7 @@
 	{% block styles %}
 	    <link rel="stylesheet" href="./css/all.css">
 	{% endblock %}
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-		<script src="js/slick.js"></script>
-	<script src="js/mediaelement-and-player.js"></script>
-
+	<script  src="./js/require.js"  data-main="{% block jsEntryPoint %}./js/index{% endblock %}"></script>
 
 
 </head>
@@ -23,16 +20,6 @@
 		{% include './blocks/_footer.twig' %}
 	</div>
 
-			<script src="js/slick.js"></script>
-			<script>
 
-		    	$(document).ready(function(){
-		    	  $('.multiple-slide').slick({
-		    	  	vertical: true,
-		    	  	slidesToShow: 5
-		    	  });
-		    	});
-		    	var player = new MediaElementPlayer('#player1');
-	    	</script>
 </body>
 </html>

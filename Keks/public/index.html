@@ -8,10 +8,7 @@
 	
 	    <link rel="stylesheet" href="./css/all.css">
 	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-		<script src="js/slick.js"></script>
-	<script src="js/mediaelement-and-player.js"></script>
-
+	<script  src="./js/require.js"  data-main="./js/index"></script>
 
 
 </head>
@@ -23,22 +20,22 @@
 			<nav class="header__nav">
 				<ul class="nav-menu">
 					<li>
-						<a href="#">Акция</a>
+						<a href="#">Магазины</a>
 					</li>
 					<li>
-						<a href="#">Акция</a>
+						<a href="#">Доставка и оплата</a>
 					</li>
 					<li>
-						<a href="#">Акция</a>
+						<a href="#">Гарантия</a>
 					</li>
 					<li>
-						<a href="#">Акция</a>
+						<a href="#">Кредит</a>
 					</li>
 					<li>
-						<a href="#">Акция</a>
+						<a href="#">О Компании</a>
 					</li>
 					<li>
-						<a href="#">Акция</a>
+						<a href="#">Контакты</a>
 					</li>
 					<li>
 						<a href="#" class="action">Акция</a>
@@ -166,12 +163,18 @@
 				<a href="#">Статьи</a>
 			</li>
 		</ul>
-		<ul class="">
+		<ul class="main-slider">
+			<li>
+				<img src="img/slide-2.jpg" width="1576" height="823" alt="Image description">
+			</li>
 			<li>
 				<img src="img/slide-1.jpg" width="1576" height="823" alt="Image description">
 			</li>
 			<li>
 				<img src="img/slide-2.jpg" width="1576" height="823" alt="Image description">
+			</li>
+			<li>
+				<img src="img/slide-1.jpg" width="1576" height="823" alt="Image description">
 			</li>
 		</ul>
 	</div>
@@ -182,7 +185,7 @@
 			<div class="holder-about">
 				<div class="slider-img">
 	<div class="v-slider-block">
-		<ul class="multiple-slide">
+		<ul class="vertical-slider">
 			<li>
 				<a href="#">
 					<img src="img/v-slide-1.jpg"  alt="Image description">
@@ -285,11 +288,11 @@
 		<div class="guarantee">Гарантия:<span class="guarantee-time"> 2 года</span></div>
 		<form action="#" class="guarantee-form">
 			<div class="row">
-				<input type="radio" name="guarantee" id="radio-1">
+				<input type="radio" name="guarantee" id="radio-1" checked name="guarantee-2">
 				<label for="radio-1"><span></span>2 года гаратии</label>
 			</div>
 			<div class="row">
-				<input type="radio" name="guarantee" id="radio-2">
+				<input type="radio" name="guarantee" id="radio-2" name="guarantee-3">
 				<label for="radio-2"><span></span>3 года гаратии</label>
 			</div>
 		</form>
@@ -753,8 +756,8 @@
 		<div class="holder-title">
 			<h2 class="title-block">Видеообзоры:<span class="model"> Samsung Galaxy J7 J700H/DS Black</span></h2>
 		</div>
-		<video poster="img/video-img.jpg" id="player1" preload="none" width="640" height="360" style="width: 100%; height: 100%;">
-			<source type="video/youtube" src="https://www.youtube.com/watch?v=I1qHVVbYG8Y">
+		<video poster="img/video-img.jpg" class="player1" preload="none" width="640" height="360" style="width: 100%; height: 100%;">
+			<source type="video/youtube" src="https://www.youtube.com/watch?v=R9qdyXCVNVk">
 		</video>
 	</div>
 </div>
@@ -765,11 +768,10 @@
 		</div>
 		<div class="holder-viewed">
 		
-			<ul class="slick-slider">
+			<ul class="block-slider">
 				<li>
 					<div class="keks-complect">
 	<div class="holder-img">
-		<a href="#" class="keks"></a>
 		<a href="#" class="image-block compl-1">
 			<img src="img/keks-compl-1.png" width="195" height="329" alt="Image description">
 		</a>
@@ -781,6 +783,7 @@
 	<div class="holder-product">
 		<a class="title">Apple Ipad Pro +<br>Apple Watch Premium Black<br>3d line</a>
 	</div>
+	<a href="#" class="keks"></a>
 </div>
 				</li>
 				<li>
@@ -898,6 +901,41 @@
 		</a>
 		<a href="#" class="btn btn-action">Акция!</a>
 		<a href="#" class="btn btn-sale">Уценка %</a>
+	</div>
+	<div class="holder-product">
+		<a class="title">Моноколесо InMotion SCV V5<br>(White)<br>3ая строчка</a>
+	</div>
+	<div class="holder-tools">
+		<div class="holder-price">
+			<div class="rating">
+				<span class="fa fa-star"></span>
+				<span class="fa fa-star"></span>
+				<span class="fa fa-star"></span>
+				<span class="fa fa-star-half-o"></span>
+				<span class="fa fa-star-o"></span>
+			</div>
+			<div class="reviews">Отзывов: <a class="count-reviews">0</a></div>
+			<div class="price">11 999<span class="cy"> грн</span></div>
+		</div>
+		<div class="holder-buy">
+			<div class="holder-compare">
+				<a href="#" class="btn btn-compare">Сравнить</a>
+				<a href="#" class="fa fa-heart btn-like"></a>
+			</div>
+			<a href="#" class="btn btn-buy">Купить</a>
+		</div>
+	</div>
+	<span class="plus"></span>
+</div>
+				</li>
+				<li>
+					<div class="product new-product">
+	<a  href="#" class="btn btn-new">Новинка!</a>
+	<div class="holder-img">
+		<a href="#" class="image-block">
+			<img src="img/set-img-1.png" width="298" height="298" alt="Image description">
+		</a>
+		<a href="#" class="btn btn-ex">Эксклюзив</a>
 	</div>
 	<div class="holder-product">
 		<a class="title">Моноколесо InMotion SCV V5<br>(White)<br>3ая строчка</a>
@@ -1104,16 +1142,6 @@
 </footer>
 	</div>
 
-			<script src="js/slick.js"></script>
-			<script>
 
-		    	$(document).ready(function(){
-		    	  $('.multiple-slide').slick({
-		    	  	vertical: true,
-		    	  	slidesToShow: 5
-		    	  });
-		    	});
-		    	var player = new MediaElementPlayer('#player1');
-	    	</script>
 </body>
 </html>

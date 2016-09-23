@@ -36,7 +36,7 @@ gulp.task('main-bower-files',  function() {
 });
 
 gulp.task('public::images', function(){
-	return gulp.src(['./frontend/images/*.jpg', './frontend/images/*.png', './frontend/images/*.svg'])
+	return gulp.src(['./frontend/images/*.jpg', './frontend/images/*.png'])
 	.pipe(gulp.dest('./public/img'))
 	.pipe(logger())
 	.pipe(browserSync.stream());
@@ -60,11 +60,11 @@ gulp.task('stylesheets', function () {
   return gulp.src('./frontend/stylesheets/**/*.scss')
 	.pipe(sourcemaps.init())
 	.pipe(sass().on('error', sass.logError))
-/*	.pipe(autoprefixer({
-		browsers: ['last 10 versions'],
-		cascade: false
-	}))
-	.pipe(cleanCSS({compatibility: 'ie8'}))*/
+	// .pipe(autoprefixer({
+	// 	browsers: ['last 10 versions'],
+	// 	cascade: false
+	// }))
+	// .pipe(cleanCSS({compatibility: 'ie8'}))
 	.pipe(sourcemaps.write('./maps'))
 	.pipe(gulp.dest('./public/css'))
 	.pipe(browserSync.stream());

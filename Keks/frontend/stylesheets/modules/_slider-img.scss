@@ -120,3 +120,24 @@
 		right: 0;
 	}
 }
+
+@include media (desktop-large) {
+	.slider-img {
+		.holder-img-bl {
+			width: 200px;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		.video-review, .d-review  {
+			display: block;
+			width: 100%;
+			&:before {
+				left: 5%;
+			}
+		}
+		.video-review  {
+			border-right: 0;
+			border-bottom: 1px solid #e8e8e8;
+		}
+	}
+}

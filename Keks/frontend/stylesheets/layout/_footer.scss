@@ -211,3 +211,13 @@
 		}
 	}
 }
+@include media (desktop-large) {
+	.footer {
+		&__bottom {
+			.column {
+				padding-right: 30px;
+				padding-left: 30px;
+			}
+		}
+	}
+}

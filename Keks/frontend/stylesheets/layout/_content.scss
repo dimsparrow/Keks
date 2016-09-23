@@ -1,5 +1,76 @@
 .slider-block {
 	padding: 25px 0 0;
+	.slick-arrow {
+		background: #ccc;
+		border: 0;
+		font-size: 0;
+		line-height: 0;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+		z-index: 2;
+		opacity: .8;
+		outline: 0;
+		&:before {
+			content: '\f104';
+			font: 24px/30px 'FontAwesome';
+			position: absolute;
+			left: 28px;
+			top: 50%;
+			transform: translateY(-50%);
+			color: #fff;
+		}
+		&:hover {
+			opacity: .4;
+		}
+	}
+	.slick-prev {
+		left: 25px;
+		&:before {
+			left: 22px;
+		}
+	}
+	.slick-next {
+		right: 25px;
+		&:before {
+			content: '\f105';
+		}
+	}
+	.slick-dots {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		bottom: 40px;
+		li {
+			display: inline-block;
+			padding: 0 8px;
+			button {
+				border: 1px solid #b7b7b7;
+				border-radius: 50%;
+				display: block;
+				height: 11px;
+				width: 11px;
+				outline: none;
+				line-height: 0px;
+				font-size: 0px;
+				cursor: pointer;
+				padding: 0;
+				background: #fff;
+				&:hover {
+					background: #ffd537;
+					border-color: #ffd537;
+				}
+			}
+		}
+		.slick-active {
+			button {
+				background: #b7b7b7;
+			}
+		}
+	}
 	.breadcrumbs {
 		margin: 0 0 22px;
 		li {
@@ -392,10 +463,10 @@
 		background: #fff;
 		border-radius: 5px;
 		border: 1px solid #ffcb05;
+		overflow: hidden;
+		position: relative;
 		.holder-img {
-			padding: 37px 0 0;
-			overflow: hidden;
-			height: 386px;
+			height: 424px;
 		}
 		.holder-product {
 			padding-bottom: 16px;
@@ -421,10 +492,7 @@
 		border: 1px solid #fff;
 	}
 }
-.viewed-block  {
-	.holder-viewed {
-		text-align: center;
-	}
+.viewed-block {
 	.product {
 		margin-right: 0;
 	}
@@ -442,6 +510,40 @@
 	}
 	.plus {
 		display: none;
+	}
+	.slick-arrow {
+		border: 0;
+		font-size: 0;
+		line-height: 0;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: 2;
+		outline: 0;
+		padding: 0;
+		&:before {
+			content: '\f104';
+			font: 40px/48px 'FontAwesome';
+			position: absolute;
+			top: 0;
+			left: 0;
+			transform: translateY(-50%);
+			color: #cecece;
+		}
+		&:hover {
+			opacity: .4;
+		}
+	}
+	.slick-prev {
+		left: -30px;
+		&:before {
+		}
+	}
+	.slick-next {
+		right: -15px;
+		&:before {
+			content: '\f105';
+		}
 	}
 }
 .specifications-block {
@@ -563,7 +665,7 @@
 		margin: 0 0 30px;
 		li {
 			background: url('../img/article-img-1.png') no-repeat #fff;
-			padding: 35px 50px 35px 315px;
+			padding: 0 50px 0 315px;
 			border: 1px solid #e3e3e3;
 			border-radius: 5px;
 			line-height: 1.4;
@@ -620,6 +722,46 @@
 		.model {
 			color: #a3a3a3;
 			font-weight: 400;
+		}
+	}
+}
+
+@include media (desktop-large) {
+	.about-product-block {
+		.holder-about {
+			padding-right: 10px;
+			padding-left: 10px;
+		}
+	}
+	.sets-block {
+		.new-product {
+			display: none;
+		}
+	}
+	.viewed-block {
+		.slick-arrow {
+			width: 40px;
+			height: 40px;
+			background: #ffcb05;
+			border-radius: 50%;
+			opacity: .7;
+			top: -25px;
+			left: inherit;
+				&:before {
+				top: 18px;
+				left: 8px;
+				color: #fff;
+			}
+		}
+		.slick-prev {
+			right: 60px;
+		}
+		.slick-next {
+			right: 10px;
+
+			&:before {
+				left: 15px;
+			}
 		}
 	}
 }

@@ -207,4 +207,25 @@
 		}
 	}
 }
-
+@include media (desktop-large) {
+	.header {
+		&__bottom  {
+			.logo {
+				flex-shrink: 0;
+			}
+			.search-form {
+				width: 350px;
+			}
+			input[type="text"] {
+				width: 73%;
+			}
+			.wish {
+				padding-right: 25px;
+				padding-left: 25px;
+			}
+		}
+		&__nav {
+			padding-left: 0;
+		}
+	}
+}
