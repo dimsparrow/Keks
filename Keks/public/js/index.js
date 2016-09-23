@@ -50,10 +50,9 @@ $(".block-slider").slick({
 
     }, {
 
-      breakpoint: 600,
+      breakpoint: 1300,
       settings: {
-        slidesToShow: 2,
-        dots: true
+        slidesToShow: 3,
       }
 
     }, {

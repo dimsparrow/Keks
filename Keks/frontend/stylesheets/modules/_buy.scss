@@ -1,5 +1,3 @@
-.buy-container {
-}
 .holder-buy-block {
 	margin: 0 0 23px;
 	box-shadow: 1px 1px 20px 0 #efefef;
@@ -239,5 +237,10 @@
 		&:hover {
 			opacity: .7;
 		}
+	}
+}
+@include media (desktop-middle) {
+	.buy-container {
+		order: 1;
 	}
 }

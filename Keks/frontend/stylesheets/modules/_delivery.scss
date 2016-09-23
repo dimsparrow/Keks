@@ -134,3 +134,8 @@
 		padding-left: 8px;
 	}
 }
+@include media (desktop-middle) {
+	.delivery{
+		order: 3;
+	}
+}

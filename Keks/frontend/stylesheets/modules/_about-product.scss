@@ -207,3 +207,8 @@
 		padding-left: 10px;
 	}
 }
+@include media (desktop-middle) {
+	.about-product  {
+		order: 2;
+	}
+}
