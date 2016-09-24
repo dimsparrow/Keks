@@ -6,6 +6,9 @@
 			align-items: center;
 			justify-content: space-between;
 		}
+		.btn-menu {
+			display: none;
+		}
 	}
 	&__nav {
 		padding: 0 0 0 240px;
@@ -190,6 +193,11 @@
 					opacity: .7;
 				}
 			}
+			.fa-power-off {
+				&:before {
+					left: 11px;
+				}
+			}
 		}
 		.basket {
 			padding: 75px 28px 40px;
@@ -267,7 +275,7 @@
 				padding-right: 15px;
 			}
 			.holder-select {
-				width: 89%;
+				width: 89.5%;
 				margin: 0 0 10px;
 				padding-left: 0;
 				padding-right: 0;
@@ -275,6 +283,127 @@
 			select {
 				width: 100%;
 			}
+		}
+	}
+}
+@include media (desktop) {
+	.header {
+		.nav-menu {
+			li {
+				margin-right: 10px;
+				font-size: 12px;
+			}
+		}
+		&__bottom {
+			.search-form {
+				width: 245px;
+			}
+			.holder-select {
+				width: 96.5%;
+			}
+			.wish {
+				flex-direction: column;
+				padding-left: 10px;
+				padding-right: 10px;
+				padding-top: 5px;
+				padding-bottom: 5px;
+				li {
+					margin-right: 0;
+					margin-bottom: 5px;
+				}
+				&:before {
+					content: none;
+				}
+			}
+			.basket {
+				padding-top: 88px;
+				padding-bottom: 88px;
+			}
+		}
+	}
+}
+@include media (mobile) {
+	.header {
+		position: relative;
+		&__login {
+			display: none;
+		}
+		&__top {
+			border: 0;
+		}
+		&__nav {
+			display: none;
+			position: absolute;
+			top: 100%;
+			background: #fff;
+			z-index: 5;
+			border: 2px solid #ccc;
+			border-radius: 5px;
+			.nav-menu {
+				text-align: left;
+				li{
+					display: block;
+					a {
+						padding: 10px;
+						display: block;
+					}
+				}
+			}
+		}
+		&__bottom {
+			.wish {
+				display: none;
+			}
+			.holder-select {
+				display: none;
+			}
+			.call-back {
+				display: none;
+			}
+			.search-form {
+				display: none;
+			}
+			.holder-form {
+				width: 40px;
+				height: 40px;
+				border-radius: 50%;
+				background: #eee;
+				padding: 0;
+				position: relative;
+				&:before {
+					content: '\f002';
+					font: 20px/25px 'FontAwesome';
+					position: absolute;
+					left: 10px;
+					top: 50%;
+					transform: translateY(-50%);
+				}
+				&:hover {
+					opacity: .8;
+					cursor: pointer;
+				}
+			}
+			.basket {
+				padding-top: 55px;
+				padding-bottom: 15px;
+				padding-left: 15px;
+				padding-right: 15px;
+			}
+		}
+		.logo {
+			background-image: url('../img/logo-mobile.png');
+			width: 94px;
+			height: 42px;
+			margin-left: 35px;
+		}
+		.btn-menu {
+			display: block;
+			font-size: 20px;
+			position: absolute;
+			left: 10px;
+			top: 50%;
+			transform: translateY(-50%);
+
 		}
 	}
 }

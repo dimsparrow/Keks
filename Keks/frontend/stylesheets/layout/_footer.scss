@@ -127,6 +127,9 @@
 			.links {
 				display: flex;
 				padding: 15px 0 30px;
+				li {
+					margin: 0 12px 0 0;
+				}
 				.fa {
 					width: 42px;
 					height: 42px;
@@ -135,7 +138,6 @@
 					font-size: 20px;
 					color: #787878;
 					position: relative;
-					margin: 0 12px 0 0;
 					&:before {
 						position: absolute;
 						left: 13px;
@@ -241,6 +243,71 @@
 		}
 		&__logo {
 			padding-right: 20px;
+		}
+	}
+}
+@include media (desktop) {
+	.footer  {
+		&__top {
+			.menu-plus {
+				li {
+					flex-direction: column;
+					text-align: center;
+				}
+				[class^="icon-"] {
+					margin-right: 0;
+					margin-bottom: 15px;
+				}
+			}
+		}
+		&__bottom {
+			flex-wrap: wrap;
+			justify-content: center;
+			.column {
+				margin-bottom: 15px;
+				padding-right: 15px;
+    			padding-left: 15px;
+			}
+		}
+	}
+}
+@include media (mobile)  {
+	.footer {
+		&__top {
+			display: none;
+		}
+		&__logo {
+			padding-right: 0;
+			p {
+				display: none;
+			}
+			.logo-scalar {
+				display: none;
+			}
+		}
+		&__bottom {
+			text-align: center;
+			.info {
+				display: none;
+			}
+			.section {
+				display: none;
+			}
+			.contacts {
+				padding: 0;
+				.payment {
+					display: none;
+				}
+			}
+			.news {
+				padding: 0;
+				.links {
+					li {
+						margin: 0;
+						padding: 0 10px;
+					}
+				}
+			}
 		}
 	}
 }

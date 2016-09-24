@@ -242,5 +242,84 @@
 @include media (desktop-middle) {
 	.buy-container {
 		order: 1;
+		margin: 0 0 20px;
+	}
+}
+@include media (desktop)  {
+	.buy-container  {
+		margin-top: 20px;
+		width: 100%;
+		.holder-title {
+			text-align: center;
+		}
+		.holder-counter {
+			text-align: center;
+		}
+		.holder-tools {
+			justify-content: space-around;
+		}
+		.links-buy {
+			text-align: center;
+		}
+	}
+}
+@include media (mobile) {
+	.buy-container {
+		.holder-tools {
+			flex-direction: column;
+			text-align: center;
+			margin-bottom: 15px;
+			.holder-price {
+				margin-right: 0;
+				margin-bottom: 10px;
+			}
+		}
+		.links-buy {
+			padding: 5px;
+			span {
+				display: none;
+			}
+			.tweet  {
+				display: none;
+			}
+			.count-fb {
+				margin-right: 0;
+			}
+		}
+	}
+	.holder-buy-block  {
+		.holder-counter {
+			.counter {
+				font-size: 20px;
+			}
+		}
+		.holder-number {
+			.one-click {
+				width: 100%;
+				border: 1px solid #eee;
+				border-radius: 5px;
+			}
+			.number {
+				width: 100%;
+				margin-bottom: 5px;
+				border: 1px solid #eee;
+				border-radius: 5px;
+			}
+		}
+		.holder-desire {
+			.compare {
+				width: 100%;
+				border-bottom: 1px solid #d4d4d4;
+			}
+			.desire {
+				width: 100%;
+			}
+		}
+	}
+	.about-product-block {
+		margin: 0 0 10px;
+	}
+	.main {
+		padding: 20px 0 0;
 	}
 }

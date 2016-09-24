@@ -135,7 +135,15 @@
 	}
 }
 @include media (desktop-middle) {
-	.delivery{
+	.delivery {
 		order: 3;
+	}
+}
+@include media (desktop) {
+	.delivery {
+		width: 100%;
+		.bonus {
+			display: none;
+		}
 	}
 }

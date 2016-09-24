@@ -141,3 +141,11 @@
 		}
 	}
 }
+@include media (mobile)  {
+	.slider-img {
+		margin-bottom: 15px;
+		.holder-img-bl {
+			width: 100%;
+		}
+	}
+}

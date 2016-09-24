@@ -25,13 +25,7 @@
 	@if $point == desktop {
 		@media only screen and (max-width: $desktop) { @content; }
 	}
-	@else if $point == tablet {
-		@media only screen and (max-width: $tablet) { @content; }
-	}
 	@else if $point == mobile {
 		@media only screen and (max-width: $mobile) { @content; }
-	}
-	@else if $point == mobile-small {
-		@media only screen and (max-width: $mobile-small) { @content; }
 	}
 }

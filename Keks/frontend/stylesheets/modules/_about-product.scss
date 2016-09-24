@@ -212,3 +212,8 @@
 		order: 2;
 	}
 }
+@include media (desktop) {
+	.about-product  {
+		order: 1;
+	}
+}

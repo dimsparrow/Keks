@@ -832,13 +832,134 @@
 }
 @include media (desktop) {
 	.slider-block {
-		li {
-			overflow: hidden;
-			img {
-				position: relative;
-				left: 50%;
-				transform: translateX(-50%);
-				height: auto;
+		.products-menu {
+			li {
+				font-size: 12px;
+			}
+			ul {
+				li {
+					a {
+						font-size: 12px;
+						padding-top: 5px;
+						padding-bottom: 5px;
+					}
+				}
+			}
+		}
+		.main-slider {
+			li {
+				overflow: hidden;
+				img {
+					position: relative;
+					left: 50%;
+					transform: translateX(-50%);
+					height: auto;
+				}
+			}
+		}
+	}
+	.sets-block {
+		.holder-products {
+			flex-direction: column;
+		}
+		.product {
+			margin-right: 0;
+			margin-bottom: 15px;
+		}
+		.plus {
+			top: inherit;
+			bottom: -35px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+		.total {
+			.all-pay {
+				font-size: 25px;
+				margin-bottom: 20px;
+				&:before {
+					content: none;
+				}
+				.count-all {
+					font-size: 60px;
+				}
+				.cy {
+					font-size: 30px;
+				}
+			}
+			.total-nosale {
+				font-size: 25px;
+				margin-bottom: 20px;
+			}
+			.sale {
+				font-size: 25px;
+				.count-sale {
+					font-size: 35px;
+				}
+			}
+		}
+	}
+	.specifications-block {
+		.holder-block {
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+	}
+}
+@include media (mobile) {
+	.slider-block {
+		display: none;
+		.slider-img {
+			.holder-img-bl {
+				width: 100%;
+			}
+		}
+	}
+	.sets-block {
+		display: none;
+	}
+	.video-block {
+		display: none;
+	}
+	.viewed-block {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		.holder-title {
+			.title-block {
+				margin-bottom: 50px;
+			}
+		}
+	}
+	.articles-block {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		font-size: 10px;
+		ul {
+			li {
+				padding: 10px;
+				background-image: none;
+				&:last-child {
+					background-image: none;
+				}
+			}
+		}
+	}
+	.specifications-block {
+		.reviews {
+			font-size: 10px;
+		}
+		.specifications {
+			margin-bottom: 20px;
+			font-size: 10px;
+		}
+		.comments {
+			.comment {
+				font-size: 10px;
+				footer {
+					flex-direction: column;
+				}
+				time  {
+					font-size: 10px;
+				}
 			}
 		}
 	}
