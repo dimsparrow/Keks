@@ -72,12 +72,6 @@ requirejs([
 					$(this).next().slideUp('fast');
 				}
 			});
-			$(document).on('click', function(event){
-				if(!$(event.target).hasClass('btn-menu') && $(event.target).closest('.header__nav').length != 1){
-					$('.btn-menu').removeClass('active');
-					$('.btn-menu').next().slideUp();
-				}
-			});
 		}
 	};
 
